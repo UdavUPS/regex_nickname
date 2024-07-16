@@ -11,7 +11,7 @@ export default class Validator {
       }
 
     validateUsername(name) {
-        return /^[^0-9 _-][a-z_0-9-]+[^0-9 _-]$/.test(name)
+        return /^(?=[a-zA-Z])(?!.(\d)\d\d)[a-zA-Z0-9-_][a-zA-Z]$/.test(name)
         
     }
 }

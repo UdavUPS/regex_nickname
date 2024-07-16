@@ -8,14 +8,14 @@ test('Validator', () => {
     for (let i = 0; i < logs.length; i+2) {
 
         let result = obj.validateUsername(logs[i]);
-        expect(result).toBe(logs[i++]);
+        expect(result).toEqual(logs[i++]);
         
     } */
 
         let result = obj.validateUsername('Vasa');
-        expect(result).toBe(true);
+        expect(result).toEqual(true);
 
         let result2 = obj.validateUsername('1-qwe3');
-        expect(result2).toBe(false);
+        expect(result2).toEqual(false);
 
 });
