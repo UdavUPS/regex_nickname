@@ -13,9 +13,9 @@ test('Validator', () => {
     } */
 
         let result = obj.validateUsername('Vasa');
-        expect(result).toEqual(true);
+        expect(result).toBe(true);
 
         let result2 = obj.validateUsername('1-qwe3');
-        expect(result2).toEqual(false);
+        expect(result2).toBe(false);
 
 });
