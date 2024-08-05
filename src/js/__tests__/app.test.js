@@ -18,4 +18,7 @@ test('Validator', () => {
         let result2 = obj.validateUsername('1-qwe3');
         expect(result2).toBe(false);
 
+        let result3 = obj.validateUsername('A3333v');
+        expect(result3).toBe(false);
+
 });
